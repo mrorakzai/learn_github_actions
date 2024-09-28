@@ -1,0 +1,16 @@
+name: my first github workfolw
+
+on: push
+
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: echo in the repository
+              run: echo "hello world!!"
+
+            - name: list files in the repo
+              run: ls
+
+            - name: read readme.md file
+              run: cat readme.md
